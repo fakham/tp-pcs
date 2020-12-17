@@ -1,0 +1,12 @@
+<table class="table table-striped">
+  <tr>
+    <td *ngFor="let header of headers">{{header}}</td>
+  </tr>
+  <tbody>
+    <tr *ngFor="let computer of computers">
+      <td>{{computer.name}}</td>
+      <td>{{computer.brand}}</td>
+      <td>{{computer.price}}</td>
+    </tr>
+  </tbody>
+</table>

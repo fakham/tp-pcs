@@ -1,0 +1,14 @@
+<form class="row g-3 mt-2 justify-content-center" (submit)="submitForm()">
+  <div class="col-auto">
+    <input type="text" class="form-control" placeholder="Name" name="name" [(ngModel)]="name">
+  </div>
+  <div class="col-auto">
+    <input type="text" class="form-control" placeholder="Brand" name="brand" [(ngModel)]="brand">
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" placeholder="Price" name="price" [(ngModel)]="price">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Add</button>
+  </div>
+</form>

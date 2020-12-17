@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Computer } from './computer';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tp-pcs';
+  title = 'PCs';
+  headers = ['Name', 'Brand', 'Price'];
+  data:Array<Computer>;
+
+  constructor() {
+    this.data = new Array<Computer>();
+  }
+
+  addComputer(computer:Computer) {
+    this.data.push(computer);
+  }
 }
